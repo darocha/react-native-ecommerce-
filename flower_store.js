@@ -10,7 +10,7 @@ import {
 } from 'react-native-router-flux';
 import Main from './src/views/main';
 import UserRegister from './src/views/user_register';
-
+import RetailerHome from './src/views/retailer_home';
 
 console.ignoredYellowBox = [
   'Warning: In next release empty section headers will be rendered.',
@@ -23,6 +23,7 @@ const scenes = Actions.create(
   <Scene key="root" hideNavBar={true}>
     <Scene key='main' component={Main} title='Main'/>
     <Scene key='user_register' component={UserRegister} title='Login'/>
+    <Scene key='retailer_home' component={RetailerHome} title='RetailerHome'/>
   </Scene>
 );
 

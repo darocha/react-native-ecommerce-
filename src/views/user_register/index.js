@@ -40,10 +40,11 @@ export default class UserRegister extends Component {
 				'Success',
 				'Thanks for joining us.'
 				);
+			Actions.retailer_home();
 		}
 	}
 	_onCancelClicked(){
-		Actions.main();
+		Actions.pop();
 	}
 	render() {
 		const data = [
