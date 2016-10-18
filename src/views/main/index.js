@@ -22,6 +22,10 @@ export default class Main extends Component {
 		};
 
 	}
+	_onRegisterButton(){
+		Actions.user_register();
+
+	}
 	_onLoginButton(){
 		Actions.login();
 
@@ -32,12 +36,12 @@ export default class Main extends Component {
 				<Text style={styles.titleText}>
 					{this.state.title}
 				</Text>
-				<TouchableHighlight style={styles.highlightStyle} onPress={this._onLoginButton}>
+				<TouchableHighlight style={styles.highlightStyle} onPress={this._onLoginButton} underlayColor='#099'>
 					<Text style={styles.buttonText}>
 						Sign In
 					</Text>
 				</TouchableHighlight>
-				<TouchableHighlight style={styles.highlightStyle} onPress={this._onRegisterButton}>
+				<TouchableHighlight style={styles.highlightStyle} onPress={this._onRegisterButton} underlayColor='#099'>
 					<Text style={styles.buttonText}>
 						Sign Up
 					</Text>
@@ -52,7 +56,8 @@ var styles = StyleSheet.create({
     flexDirection: 'column',
 		backgroundColor:'#0cc',
 		alignItems:'center',
-		justifyContent:'center'
+		justifyContent:'center',
+		marginTop:20
   },
   titleText: {
     color: 'white',
@@ -67,7 +72,7 @@ var styles = StyleSheet.create({
  		borderColor:'#fff',
  		borderRadius:10,
 		borderWidth:2,
-		backgroundColor:'#8f8f00',
+		backgroundColor:'#00dddd',
 		paddingTop:10,
 		paddingBottom:10,
 		paddingLeft:20,
