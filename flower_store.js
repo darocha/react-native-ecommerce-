@@ -9,6 +9,7 @@ import {
   // Reducer,
 } from 'react-native-router-flux';
 import Main from './src/views/main';
+import Login from './src/views/login';
 
 
 console.ignoredYellowBox = [
@@ -20,7 +21,8 @@ console.ignoredYellowBox = [
 
 const scenes = Actions.create(
   <Scene key="root" hideNavBar={true}>
-    <Scene key='Main' component={Main} title='Main'/>
+    <Scene key='main' component={Main} title='Main'/>
+    <Scene key='login' component={Login} title='Login'/>
   </Scene>
 );
 

@@ -23,7 +23,7 @@ export default class Main extends Component {
 
 	}
 	_onLoginButton(){
-		Actions.loginClicked();
+		Actions.login();
 
 	}
 	render() {
@@ -34,12 +34,12 @@ export default class Main extends Component {
 				</Text>
 				<TouchableHighlight style={styles.highlightStyle} onPress={this._onLoginButton}>
 					<Text style={styles.buttonText}>
-						LOG IN
+						Sign In
 					</Text>
 				</TouchableHighlight>
 				<TouchableHighlight style={styles.highlightStyle} onPress={this._onRegisterButton}>
 					<Text style={styles.buttonText}>
-						REGISTER
+						Sign Up
 					</Text>
 					
 				</TouchableHighlight>
